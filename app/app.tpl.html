@@ -1,0 +1,27 @@
+<div class="container">
+	<nav class="navbar navbar-dark bg-primary">
+		<a class="navbar-brand" href="#">Feedback Form</a>
+	  <div class="nav navbar-nav pull-right">
+	    <a class="nav-item nav-link active" routerLink="/home" routerLinkActive="active">Home <span class="sr-only">(current)</span></a>
+	    <a class="nav-item nav-link" routerLink="/feedback" routerLinkActive="active">Feedback</a>
+	    <a class="nav-item nav-link" routerLink="/help" routerLinkActive="active">Help</a>
+	  </div>
+	</nav>
+	
+</div>
+<!-- <h1>Heading</h1>
+ <ul>
+	<li><a routerLink="/home" routerLinkActive="active">Home</a></li>
+	<li><a routerLink="/feedback" routerLinkActive="active">Feedback</a></li>
+	<li><a routerLink="/help" routerLinkActive="active">Help</a></li>
+</ul> -->
+
+<hr>
+<div class="container">
+	<router-outlet></router-outlet>	
+</div>
+
+<hr/>
+<div class="container">
+	<h4>Footer</h4>
+</div>
