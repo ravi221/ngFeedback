@@ -24,15 +24,15 @@ This app contains 3 pages which are. Home, Feedback and Help
 
 ### Step #1 : create necessary files for routing
 
-**File:  rkFeedback/ngFeedback/app/components/home/home.component.ts 
-**File:  rkFeedback/ngFeedback/app/components/home/home.tpl.html 
-**File:  rkFeedback/ngFeedback/app/components/feedback/feedback.component.ts  
-**File:  rkFeedback/ngFeedback/app/components/feedback/feedback.tpl.html 
-**File:  rkFeedback/ngFeedback/app/components/help/help.component.ts
-**File:  rkFeedback/ngFeedback/app/components/help/help.tpl.html
+**File:**  rkFeedback/ngFeedback/app/components/home/home.component.ts   
+**File:**  rkFeedback/ngFeedback/app/components/home/home.tpl.html   
+**File:**  rkFeedback/ngFeedback/app/components/feedback/feedback.component.ts   
+**File:**  rkFeedback/ngFeedback/app/components/feedback/feedback.tpl.html   
+**File:**  rkFeedback/ngFeedback/app/components/help/help.component.ts  
+**File:**  rkFeedback/ngFeedback/app/components/help/help.tpl.html  
 
-**File:  rkFeedback/ngFeedback/app/app.tpl.html
-**File:  rkFeedback/ngFeedback/app/app.routing.ts
+**File:**  rkFeedback/ngFeedback/app/app.tpl.html  
+**File:**  rkFeedback/ngFeedback/app/app.routing.ts  
 
 ### Step #2 : base href
 File: index.html
