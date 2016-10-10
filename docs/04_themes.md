@@ -14,3 +14,48 @@
 ### Step #2 :
 
 Move files from app/components/<component>/<component>.tpl.html to themes/<theme>
+
+### Step #3 : app/components/home/home.component.ts
+File: app/components/home/home.component.ts
+```javascript
+...
+import myGlobals = require('../../globals'); 
+
+templateUrl: 'themes/' + myGlobals.THEME + '/home.tpl.html'
+
+public pageText = "My Home Page";
+	constructor(){
+		this.pageText = this.pageText + " "+ myGlobals.VERSION;
+	}
+...
+```
+
+### Step #4 : app/components/feedback/feedback.component.ts
+File: app/components/feedback/feedback.component.ts
+```javascript
+...
+import myGlobals = require('../../globals'); 
+
+templateUrl: 'themes/' + myGlobals.THEME + '/feedback.tpl.html'
+
+...
+```
+
+### Step #5 : app/components/help/help.component.ts
+File: app/components/help/help.component.ts
+```javascript
+...
+import myGlobals = require('../../globals'); 
+
+templateUrl: 'themes/' + myGlobals.THEME + '/help.tpl.html'
+
+...
+```
+
+### Step #5 : themes/bs4/css/theme.css
+File: themes/bs4/css/theme.css
+```css
+.style{
+	
+}
+```

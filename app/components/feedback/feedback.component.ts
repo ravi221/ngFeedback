@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-
+import myGlobals = require('../../globals'); 
 @Component({
-	templateUrl: './app/components/feedback/feedback.tpl.html'	
+	templateUrl: 'themes/' + myGlobals.THEME + '/feedback.tpl.html'	
 })
 
 export class FeedbackComponent{
