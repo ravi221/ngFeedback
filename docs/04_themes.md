@@ -15,7 +15,17 @@
 
 Move files from app/components/<component>/<component>.tpl.html to themes/<theme>
 
-### Step #3 : app/components/home/home.component.ts
+### Step #3 : app/components/app.component.ts
+```javascript
+...
+import myGlobals = require('../../globals'); 
+
+templateUrl: 'themes/' + myGlobals.THEME + '/index.tpl.html',
+styleUrls: ['themes/' + myGlobals.THEME + '/css/theme.css'],
+...
+```
+
+### Step #4 : app/components/home/home.component.ts
 File: app/components/home/home.component.ts
 ```javascript
 ...
@@ -30,7 +40,7 @@ public pageText = "My Home Page";
 ...
 ```
 
-### Step #4 : app/components/feedback/feedback.component.ts
+### Step #5 : app/components/feedback/feedback.component.ts
 File: app/components/feedback/feedback.component.ts
 ```javascript
 ...
@@ -41,7 +51,7 @@ templateUrl: 'themes/' + myGlobals.THEME + '/feedback.tpl.html'
 ...
 ```
 
-### Step #5 : app/components/help/help.component.ts
+### Step #6 : app/components/help/help.component.ts
 File: app/components/help/help.component.ts
 ```javascript
 ...
@@ -52,7 +62,7 @@ templateUrl: 'themes/' + myGlobals.THEME + '/help.tpl.html'
 ...
 ```
 
-### Step #5 : themes/bs4/css/theme.css
+### Step #7 : themes/bs4/css/theme.css
 File: themes/bs4/css/theme.css
 ```css
 .style{
