@@ -1,0 +1,13 @@
+{
+    "HELLO": "नमस्ते",
+	"LOGO_TEXT": "प्रतिक्रिया",
+	"FOOTER_TEXT": "कॉपीराइट © 2016 प्रतिक्रिया प्रणाली, सभी अधिकार सुरक्षित।",
+
+    "MENU_ITEM_HOME" :"प्रारंभ पेज",
+    "MENU_ITEM_HOME_TOOLTIP" :"प्रारंभ पेज",
+    "MENU_ITEM_HELP":"बचाओ!",
+    "MENU_ITEM_HELP_TOOLTIP": "यहाँ मदद मिल",
+
+    "MENU_ITEM_FEEDBACK":"प्रतिक्रिया",
+    "MENU_ITEM_FEEDBACK_TOOLTIP": "यहाँ अपनी प्रतिक्रिया दें"
+}

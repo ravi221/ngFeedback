@@ -1,10 +1,10 @@
 <div class="container">
 	<nav class="navbar navbar-dark bg-primary">
-		<a class="navbar-brand" href="#">Feedback Form</a>
+		<a class="navbar-brand" routerLink="/home">{{'LOGO_TEXT' | translate}}</a>
 	  <div class="nav navbar-nav pull-right">
-	    <a class="nav-item nav-link active" routerLink="/home" routerLinkActive="active">Home <span class="sr-only">(current)</span></a>
-	    <a class="nav-item nav-link" routerLink="/feedback" routerLinkActive="active">Feedback</a>
-	    <a class="nav-item nav-link" routerLink="/help" routerLinkActive="active">Help</a>
+	    <a class="nav-item nav-link active" routerLink="/home" routerLinkActive="active" title="{{'MENU_ITEM_HOME_TOOLTIP' | translate}}">{{'MENU_ITEM_HOME' | translate}} <span class="sr-only"></span></a>
+	    <a class="nav-item nav-link" routerLink="/feedback" routerLinkActive="active">{{'MENU_ITEM_FEEDBACK' | translate}} </a>
+	    <a class="nav-item nav-link" routerLink="/help" routerLinkActive="active">{{'MENU_ITEM_HELP' | translate}}</a>
 	  </div>
 	</nav>
 	
@@ -23,5 +23,17 @@
 
 <hr/>
 <div class="container">
-	<h4>Footer</h4>
+	<h4>{{'FOOTER_TEXT' | translate}}</h4>
+	<small *ngFor="let item of langList">
+    	<span *ngIf="currentLang==item.lang" >
+        	<i class="fa fa-check" aria-hidden="true"></i> {{item.title}}
+        </span>
+        <span *ngIf="currentLang!=item.lang" >
+        	<a (click)="onLangChange(item.lang)" style="cursor: pointer; cursor: hand; " class="">
+            	{{item.title}}
+            </a>
+		</span>
+        &nbsp; &nbsp;
+    </small>
+
 </div>

@@ -1,0 +1,11 @@
+<span *ngFor="let item of langList">
+    <span *ngIf="currentLang==item.lang">
+        <img  class="privacy_link" src="images/{{item.flag}}"  > 
+    </span>
+    <span *ngIf="currentLang!=item.lang" >
+        <a (click)="onLangChange(item.lang)" style="cursor: pointer; cursor: hand;">
+            <img  src="images/{{item.flag}}"  >
+        </a>
+    </span>
+    &nbsp; &nbsp;
+</span>

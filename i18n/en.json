@@ -1,0 +1,13 @@
+{
+    "HELLO": "hello",
+	"LOGO_TEXT": "Feedback System",
+	"FOOTER_TEXT": "Copyright © 2016 Feedback System,  All rights reserved.",
+
+    "MENU_ITEM_HOME" :"Home",
+    "MENU_ITEM_HOME_TOOLTIP" :"Home page",
+    "MENU_ITEM_HELP":"Help",
+    "MENU_ITEM_HELP_TOOLTIP": "Find help here",
+
+    "MENU_ITEM_FEEDBACK":"Feedback",
+    "MENU_ITEM_FEEDBACK_TOOLTIP": "Provide your feedback here"
+}
